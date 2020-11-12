@@ -1,0 +1,296 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("images/Pngtree—halloween design elements halloween_1997283.png");
+    background-position: top center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+.contents{
+    position: absolute;
+    top: 300px;
+    left: 42%;
+    display: inline-block;
+}
+#quote, #citeQt{
+    font-family: fantasy;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #ff0000;
+    word-spacing: 5px;
+}
+.cards >div{
+    width: 150px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+.cards p{
+    margin: 2px 0 0 5px;
+    font-size: 20px;
+}
+#firstCard p, #secondCard p{
+    color: #ff0000;
+}
+#thirdCard p, #fourthCard p{
+    color: #000000;
+}
+#changeling{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 120px;
+    transform: rotate(180deg);
+}
+#hearts, #diamonds, #clubss, #spades{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+#clubss p, #spades p{
+    font-size: 50px;
+    color: #000000;
+}
+#hearts p, #diamonds p{
+    font-size: 50px;
+    color: #ff0000;
+}
+#firstCard, #secondCard, #thirdCard,#fourthCard{
+    position: absolute;
+    top: 500px;
+    left: 45%;
+}
+#firstCard{
+    z-index: 1;
+    transform: translateX(-60px) translateY(5px) rotate(-25deg);
+    transition: all 0.3s ease;
+}
+#firstCard:hover{
+    -o-transform: translate(-60px, -15px) rotate(-25deg);
+    -moz-transform: translate(-60px, -15px) rotate(-25deg);
+    -webkit-transform: translate(-60px, -15px) rotate(-25deg);
+    transform: translate(-60px, -15px) rotate(-25deg);
+}
+#secondCard{
+    z-index: 2;
+    transform: translateX(10px) translateY(-2px) rotate(-10deg);
+    transition: all 0.3s ease;
+}
+#secondCard:hover{
+    -o-transform: translate(10px, -22px) rotate(-10deg);
+    -ms-transform: translate(10px, -22px) rotate(-10deg);
+    -webkit-transform: translate(10px, -22px) rotate(-10deg);
+    transform: translate(10px, -22px) rotate(-10deg);
+}
+#thirdCard{
+    z-index: 3;
+    transform: translateX(80px) translateY(10px) rotate(5deg);
+    transition: all 0.3s ease;
+}
+#thirdCard:hover{
+    -o-transform: translate(80px, -10px) rotate(5deg);
+    -ms-transform: translate(80px, -10px) rotate(5deg);
+    -webkit-transform: translate(80px, -10px) rotate(5deg);
+    transform: translate(80px, -10px) rotate(5deg);
+}
+#fourthCard{
+    z-index: 4;
+    transform: translateX(130px) translateY(30px) rotate(25deg);
+    transition: all 0.3s ease;
+}
+#fourthCard:hover{
+    -o-transform: translate(130px, 10px) rotate(25deg);
+    -ms-transform: translate(130px, 10px) rotate(25deg);
+    -webkit-transform: translate(130px, 10px) rotate(25deg);
+    transform: translate(130px, 10px) rotate(25deg);
+}
+#firstCube p, #secondCube p, #thirdCube p{
+    text-align: justify;
+    font-family: fantasy;
+    font-size: 17px;
+}
+#firstCube p{
+    padding: 40px 10px 0 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+#firstCube p:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+#secondCube p{
+    padding: 10px 10px;
+    color: #ffffff;
+}
+#thirdCube p{
+    padding: 20px 10px 0 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+#thirdCube p:hover{
+    opacity: 1;
+    color: #ffffff;
+}
+/*Хотела сделать сохранение ховера, как указано в ссылке с лекции  transition: all 0.5s 99999s lenear;
+Но на это браузер не реагирует и вообще все ломается, не поняла в чем  проблема.*/
+#firstCube{
+    background-color: black;
+    background-image: url("images/Pngtree— scary blood handprint_5494869.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1200px;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    transform: translateX(-200px) translateY(-200px);
+    transition: all 0.5s linear;
+}
+#firstCube:hover {
+    -o-transform: translate(-430px, -200px);
+    -moz-transform: translate(-430px, -200px);
+    -webkit-transform: translate(-430px, -200px);
+    transform: translate(-430px, -200px);
+    background-image: none;
+    background-color: orangered;
+}
+#secondCube{
+    background-color: goldenrod;
+    position: absolute;
+    top: 1200px;
+    left: 40%;
+    width: 420px;
+    height: 420px;
+    z-index: 2;
+}
+#thirdCube{
+    background-color: black;
+    position: absolute;
+    top: 1200px;
+    margin-bottom: 40px;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    background-image: url("images/Pngtree— scary blood handprint_5494869.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    transform: translateX(200px) translateY(200px);
+    transition: all 0.5s  linear;
+}
+#thirdCube:hover{
+    -o-transform: translate(440px, 200px);
+    -moz-transform: translate(440px, 200px);
+    -webkit-transform: translate(440px, 200px);
+    transform: translate(440px, 200px);
+    background-image: none;
+    background-color: saddlebrown;
+}
+/*Не поняла, как еще можно сделать это меню через hover. Долго пыталась, получилось только так!!*/
+#menu{
+    position: absolute;
+    top: 300px;
+    background-color: chocolate;
+    width: 200px;
+    height: fit-content;
+    z-index: 2;
+    transform: translateX(-120px);
+    transition: all 0.4s ease;
+}
+#menu:hover{
+    -o-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    z-index: 4;
+}
+#menu ul{
+    font-family: fantasy;
+    font-size: 24px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+#menu li:before{
+    content:"\2666";
+    color: yellow;
+}
+#menu a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: #f5f36e;
+    text-shadow: 2px 2px 4px #ffff00;
+    transition: all 0.3s ease;
+}
+#menu a:hover{
+    color: white;
+}
+#hereMenu{
+    margin: 0;
+    padding: 0;
+    background-color: chocolate;
+    position: relative;
+    top: 450px;
+    font-size: 24px;
+    font-family: fantasy;
+    border: none;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    transform: translateX(-25px) rotate(270deg);
+    transition: all 0.2s ease;
+}
+#animationFirstCube{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 1400px;
+    left: 560px;
+    background-image: url("images/etakartinka.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: top center;
+    background-color: yellow;
+    animation-duration: 10s;
+    animation-delay:0.25s;
+    animation-iteration-count: infinite;
+    animation-name: whatever;
+}
+@keyframes whatever{
+    0% {top: 1410px; left: 560px; background-color: yellow}
+    25% {top: 1630px; left: 560px; background-color: red}
+    50% {top: 1630px; left: 760px; background-color: orangered}
+    75% {top: 1630px; left: 560px; background-color: gold}
+    100% {top: 1410px; left: 560px; background-color: yellow}
+}
+#animationSecondCube{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 1090px;
+    left: 870px;
+    background-image: url("images/etakartinka.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: top center;
+    background-color: yellow;
+    animation-duration: 10s;
+    animation-delay:0.25s;
+    animation-iteration-count: infinite;
+    animation-name: whateverever;
+}
+@keyframes whateverever{
+    0% {top: 1090px; left: 880px; background-color: yellow}
+    25% {top: 1090px; left: 1100px; background-color: red}
+    50% {top: 1290px; left: 1100px; background-color: orangered}
+    75% {top: 1090px; left: 1100px; background-color: gold}
+    100% {top: 1090px; left: 880px; background-color: yellow}
+}
